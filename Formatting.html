@@ -8,23 +8,24 @@
         <form method="post">
         <div class="wrapper">
             <div>
-            <div class="player">
+            <div class="player" >
                 <h1>Player 1</h1>
                 <p>Name</p>
-                <input type="text">
+                <input type="text" required name="player1" disabled>
+
                 
             </div>
             <div class="player">
                 <h1>Player 2</h1>
                 <p>Name</p>
-                <input type="text">
+                <input type="text" required name="player2">
                 
                 
             </div>
             <div class="player">
                 <h1>Player 3</h1>
                 <p>Name</p>
-                <input type="text">
+                <input type="text" required name="player3">
                 
                 
             </div>
@@ -34,7 +35,6 @@
             <div class="player" id="dice">
                 <p>Number of Rounds</p>
                 <select>
-                    
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -47,9 +47,17 @@
                     <option>2</option>
                     <option>3</option>
                 </select>
+                <br>
+                <input type="submit" id="submit" value="Play">
+
+                
+
+
             </div>
         </div>
         </div>
         </form>
     </body>
 </html>
+
+

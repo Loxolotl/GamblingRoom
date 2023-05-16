@@ -88,9 +88,34 @@ body{
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
 }
+.player p.title{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
 .player#dice{
     flex: 1;
     
-    height: 20vh;
+    height: 27vh;
     width: 86%;
+
+
+}
+.player#dice input#submit{
+    background-color: #BC7C9C;
+    color: white;
+    border: 0px;
+    box-shadow: none;
+    width: 25%;
+    margin-top: 3vh;
+}
+.player#dice input#submit:active{
+    background-color: #886878;
+    color: white;
+    border: 0px;
+    box-shadow: none;
+    width: 25%;
+    margin-top: 3vh;
+}
+.player#dice input#roll{
+    display: none;
 }
