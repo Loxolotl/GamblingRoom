@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <script src="lib/jquery-3.6.4.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="img/6.png">
     </head>
     <body>
         <div id="bg_strip"></div>
