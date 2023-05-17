@@ -1,63 +1,31 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
-
+        <link rel="icon" type="image/x-icon" href="img/6.png">
+        <title>Dicey Dice</title>
+        <link rel="stylesheet" href="stylesReward.css">
     </head>
     <body>
-        <div id="bg_strip"></div>
-        <form method="post">
-        <div class="wrapper">
-            <div>
-            <div class="player" >
-                <h1>Player 1</h1>
-                <p>Name</p>
-                <input type="text" required name="player1" disabled>
+        <div id="third">
+            <?php
+            session_start();
 
-                
-            </div>
-            <div class="player">
-                <h1>Player 2</h1>
-                <p>Name</p>
-                <input type="text" required name="player2">
-                
-                
-            </div>
-            <div class="player">
-                <h1>Player 3</h1>
-                <p>Name</p>
-                <input type="text" required name="player3">
-                
-                
-            </div>
+            echo '<p>',$_SESSION['third'],'</p>';
+            ?>
         </div>
-        <br>
-        <div>
-            <div class="player" id="dice">
-                <p>Number of Rounds</p>
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-                <p>Number of dice</p>
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
-                <br>
-                <input type="submit" id="submit" value="Play">
+        <div id="first">
+        <?php
+            
 
-                
-
-
-            </div>
+            echo '<p>',$_SESSION['first'],'</p>';
+            ?>
+            <img src="img/trophy.png">
         </div>
+        <div id="second">
+        <?php
+            
+
+            echo '<p>',$_SESSION['second'],'</p>';
+            ?>
         </div>
-        </form>
     </body>
 </html>
-
-
